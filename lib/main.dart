@@ -2,10 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:stockapp/pages/products/home.dart';
 import 'package:stockapp/pages/auth/login.dart';
-import 'package:socket_io_client/socket_io_client.dart' as IO;
-import 'package:stockapp/utils/constants.dart';
-import 'package:stockapp/utils/NotificationService.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 class AuthState extends ChangeNotifier {
   bool _isAuthenticated = false;

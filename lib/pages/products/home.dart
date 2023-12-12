@@ -64,7 +64,7 @@ class _HomePageState extends State<HomePage> {
   void showNotification(String productName) {
     notificationService.showNotification(
       id: 1,
-      title: 'Low Stock',
+      title: productName,
       body: 'Low stock for product: $productName',
     );
   }

@@ -184,7 +184,8 @@ class _CartPageState extends State<CartPage> {
         backgroundColor: Colors.white,
         elevation: 0.0,
       ),
-      body: Container(
+      body: SingleChildScrollView(
+        child: Container(
         padding: const EdgeInsets.all(20.0),
         child: Column(
           children: [
@@ -196,7 +197,8 @@ class _CartPageState extends State<CartPage> {
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 5.0),
-            Column(
+            SingleChildScrollView(
+              child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const SizedBox(height: 20),
@@ -258,8 +260,10 @@ class _CartPageState extends State<CartPage> {
                 )
               ],
             ),
+            )
           ],
         ),
+      ),
       ),
     );
   }
